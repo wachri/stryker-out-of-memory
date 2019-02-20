@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test:jest": "jest --watch"
+    "test:jest": "jest --watch",
+    "stryker": "node --max-old-space-size=8192 --optimize-for-size --max_old_space_size=8192 --optimize_for_size node_modules/.bin/stryker run --fileLogLevel trace"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +31,9 @@
     "@angular/cli": "~7.3.2",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
+    "@stryker-mutator/core": "^1.0.1",
+    "@stryker-mutator/jest-runner": "^1.0.1",
+    "@stryker-mutator/typescript": "^1.0.1",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/jest": "23.3.13",

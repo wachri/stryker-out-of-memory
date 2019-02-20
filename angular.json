@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "stryker-out-of-memory"
+  "defaultProject": "stryker-out-of-memory",
+  "cli": {
+    "packageManager": "yarn"
+  }
 }

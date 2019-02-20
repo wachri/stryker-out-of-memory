@@ -8,7 +8,7 @@ module.exports = function(config) {
         logLevel: 'trace',
         coverageAnalysis: 'off',
         mutate: [
-            'src/app/*.ts',
+            'src/app/**/*.ts',
             '!src/**/*.spec.ts',
             '!src/**/*.mock.ts',
             '!**/*.d.ts',
